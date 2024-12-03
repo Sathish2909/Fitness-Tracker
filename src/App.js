@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import Plans from './components/Plans';
+import Contacts from './components/Contacts';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Hero />
+      <main>
+        <Services />
+        <Plans />
+        <Contacts />
+      </main>
+      <footer>
+        <p> 2024 FitnessPro. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 }
